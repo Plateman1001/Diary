@@ -1,0 +1,47 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    height: 96%;
+    width: 99%;
+    margin: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#title, #content, button {
+    margin: 2%;
+    min-width: 300px;
+    width: 50%;
+    min-height: 30px;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.171);
+}
+
+#content {
+    min-height: 100px;
+    height: 30%;
+}
+button {
+    background-color: rgba(0, 0, 0, 0.171);;
+}
+
+button:hover {
+    cursor: pointer;
+    animation-duration: 500ms;
+    animation-name: wecolor;
+    animation-fill-mode:forwards;
+}
+
+@keyframes wecolor {
+    0% {
+        background-color: rgba(0, 0, 0, 0.171);
+    }
+
+    100% {
+        background-color: white;
+    }
+}
